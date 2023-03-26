@@ -17,8 +17,6 @@ export function LPHeader() {
     const pathnameSplit = pathname.split('/').slice(-1);
     const hrefSplit = routeHref.split('/').slice(-1);
 
-    console.log(pathname, hrefSplit);
-
     return pathnameSplit[0] === hrefSplit[0];
   }
   return (
