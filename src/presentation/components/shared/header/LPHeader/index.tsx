@@ -7,9 +7,20 @@ import Button from '@components/shared/Button';
 import { Container, Content, Nav, Route } from './styles';
 import { lpRoutes } from './utils/routes';
 import { Text } from '@components/shared/Typography/Text';
+import { usePathname } from 'next/navigation';
 
 // Landing Page header -> short name -> LP Header
 export function LPHeader() {
+  const pathname = usePathname();
+
+  function comparePathnameWithRoutePath(routeHref: string) {
+    const pathnameSplit = pathname.split('/').slice(-1);
+    const hrefSplit = routeHref.split('/').slice(-1);
+
+    console.log(pathname, hrefSplit);
+
+    return pathnameSplit[0] === hrefSplit[0];
+  }
   return (
     <Container>
       <Nav>
@@ -25,7 +36,10 @@ export function LPHeader() {
         <Content>
           <ul>
             {lpRoutes.map((route, index) => (
-              <Route key={`${route.label}-${index}-${route.link}`}>
+              <Route
+                key={`${route.label}-${index}-${route.link}`}
+                isActive={comparePathnameWithRoutePath(route.link)}
+              >
                 <Link href={route.link}>
                   <Text as="small" weight={700} size="small">
                     {route.label}

@@ -52,11 +52,17 @@ export const Content = styled.div`
   }
 `;
 
-export const Route = styled.li`
+interface RouteProps {
+  isActive: boolean
+}
+
+export const Route = styled.li<RouteProps>`
   list-style: none;
 
   &, a {
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme, isActive }) => (isActive
+    ? theme.colors.brand[300]
+    : theme.colors.white)};
   }
 
   a {

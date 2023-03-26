@@ -1,7 +1,7 @@
 export const lpRoutes = [
   {
     label: 'Omni trafo',
-    link: '#'
+    link: '/'
   },
 
   {
