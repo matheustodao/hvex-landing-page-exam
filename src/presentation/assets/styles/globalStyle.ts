@@ -1,12 +1,13 @@
 'use client';
 
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, css } from 'styled-components';
 import { Inter } from 'next/font/google';
 
 const inter = Inter({
   variable: '--inter-font',
   subsets: ['latin'],
-  fallback: ['sans-serif']
+  fallback: ['sans-serif'],
+  weight: ['400', '500', '700']
 });
 
 export const GlobalStyle = createGlobalStyle`
@@ -19,19 +20,21 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
 
     box-sizing: border-box;
-    font-family: 62.5%;
   }
 
   :root {
     --inter-font: ${inter.style.fontFamily};
+    font-size: 62.5%;
   }
 
   html, body {
-    font-family: ${({ theme }) => theme.fonts.primary.family};
-    font-weight: ${({ theme }) => theme.fonts.primary.weight[400]};
-    font-size: 1rem;
-    background: ${({ theme }) => theme.colors.bg.default};
-    color: ${({ theme }) => theme.colors.primary.dark};
+    ${({ theme }) => css`
+      font-family: ${theme.fonts.primary.family};
+      font-weight: ${theme.fonts.primary.weight[400]};
+      font-size: ${theme.fonts.size.normal};
+      background: ${theme.colors.bg.default};
+      color: ${theme.colors.primary.dark};
+    `}
   }
 
   html {

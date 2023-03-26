@@ -4,6 +4,7 @@ export const COMMON_STYLES = {
       family: 'var(--inter-font)',
       weight: {
         400: '400',
+        500: '500',
         700: '700',
       },
     },
