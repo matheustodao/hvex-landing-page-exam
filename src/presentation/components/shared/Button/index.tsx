@@ -1,3 +1,5 @@
+'use client';
+
 import React, { forwardRef, ReactNode, ButtonHTMLAttributes } from 'react';
 import { ButtonStyled, ButtonStyledProps } from './styles';
 
