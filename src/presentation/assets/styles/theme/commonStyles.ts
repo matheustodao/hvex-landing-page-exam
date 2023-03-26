@@ -15,6 +15,10 @@ export const COMMON_STYLES = {
       medium: '2.4rem',
       large: '3.2rem',
       xLarge: '4.8rem'
-    }
+    },
   },
+
+  borderRadius: {
+    normal: '0.5rem'
+  }
 };
