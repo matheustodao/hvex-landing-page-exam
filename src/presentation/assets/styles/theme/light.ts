@@ -15,14 +15,11 @@ export const LIGHT_THEME = {
       100: '#FDFDFD',
     },
 
-    primary: {
-      main: '#1C2C44',
-      dark: '#1B2033',
+    brand: {
+      600: '#1C2C44',
+      500: '#1B2033',
+      400: '#036FC0',
+      300: '#00B6DE',
     },
-
-    secondary: {
-      main: '#036FC0',
-      light: '#00B6DE',
-    }
   },
 };

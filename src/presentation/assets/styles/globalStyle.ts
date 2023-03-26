@@ -33,7 +33,7 @@ export const GlobalStyle = createGlobalStyle`
       font-weight: ${theme.fonts.primary.weight[400]};
       font-size: ${theme.fonts.size.normal};
       background: ${theme.colors.bg.default};
-      color: ${theme.colors.primary.dark};
+      color: ${theme.colors.brand[600]};
     `}
   }
 
