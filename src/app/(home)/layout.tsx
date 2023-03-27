@@ -1,4 +1,5 @@
 import { LayoutSetup } from '@/presentation/components/shared/config/layout/LayoutSetup';
+import { LPHeader } from '@components/shared/header/LPHeader';
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,8 +13,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+
       <body>
         <LayoutSetup>
+          <LPHeader />
+
           {children}
         </LayoutSetup>
       </body>
