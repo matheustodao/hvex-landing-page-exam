@@ -14,11 +14,6 @@ export const OminiTrafoImageWrapper = styled.div<OminiTrafoImageWrapperProps>`
 
   transform: ${({ invert }) => (!invert ? 'none' : 'scaleX(-1)')};
 
-  @media (max-width: 1640px) {
-    width: 40.40rem;
-    height: 56.8rem;
-  }
-
   @media (max-width: 840px) {
     width: 25.25rem;
     height: 36.75rem;
@@ -62,28 +57,26 @@ export const HeroSection = styled.article`
     padding-bottom: 5.6rem;
 
     .left-content {
-      margin-right: 9rem;
-      margin-left: 4.4rem;
-      margin-top: 5.3rem;
+      margin: auto 13.5rem;
       z-index: 2;
 
       .title {
         max-width: 80rem;
-        font-size: ${({ theme }) => theme.fonts.size.large}
+        font-size: ${({ theme }) => theme.fonts.size.xLarge};
       }
 
       .description {
         line-height: 2.4rem;
         margin-top: 2.4rem;
         margin-bottom: 3.2rem;
-        max-width: 77rem;
-        font-size: ${({ theme }) => theme.fonts.size.small}
+        max-width: 80rem;
+        font-size: ${({ theme }) => theme.fonts.size.small};
       }
     }
 
     ${OminiTrafoImageWrapper} {
       position: absolute;
-      right: 0;
+      right: 2rem;
       top: 0;
       margin-top: 0;
     }
