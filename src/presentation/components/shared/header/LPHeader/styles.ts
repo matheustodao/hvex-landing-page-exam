@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.header`
   display: flex;
   padding: 2.4rem 13.5rem;
-  background: ${({ theme }) => theme.colors.brand[600]};
+  background: #252835;
 
   @media (max-width: 1075px) {
     padding-right: 10rem;
