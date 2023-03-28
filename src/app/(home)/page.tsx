@@ -8,11 +8,7 @@ import Button from '@components/shared/Button';
 import { Text } from '@components/shared/Typography/Text';
 import { Divider } from '@components/Home/Divider';
 import { CharacteristicOmniCard } from '@components/Home/CharacteristicOmniCard';
-
-const welcome_list = ['Monitoramento inteligente de ativos', 'Melhoria dos indicadores de continuidade',
-  'Comunicação Modular', 'Business Inteligence', 'Redução de Perdas técnicas e Não técnicas'];
-
-const advantages = ['Balanço energético', 'Auto-diagnóstico dos transformadores', 'Medidor ideal para consumidores comerciais, industriais', 'À prova de fraude', 'Melhoria dos Indicadores de Continuidade', 'Maior vida útil do ativo', 'Acompanhamento em tempo real das condições do equipamento'];
+import { welcome_list, advantages } from '@components/Home/utils/listContent';
 
 export default function Home() {
   return (
