@@ -200,5 +200,11 @@ export const ListContainer = styled.ul`
     + li {
       margin-top: 3.2rem;
     }
+
+    @media (min-width: 1200px) {
+      li, strong {
+        font-size: ${({ theme }) => theme.fonts.size.normal};
+      }
+    }
   }
 `;
