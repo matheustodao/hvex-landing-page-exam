@@ -71,7 +71,7 @@ export default function Home() {
                     width={20}
                     height={20}
                   />
-                  <Text as="strong" weight={700} size="small">
+                  <Text as="strong" weight={700} size="normal">
                     {item}
                   </Text>
                 </li>
@@ -160,7 +160,7 @@ export default function Home() {
                     height={20}
                   />
 
-                  <Text as="strong" weight={700} size="small">
+                  <Text as="strong" weight={700} size="normal">
                     {item}
                   </Text>
                 </li>
