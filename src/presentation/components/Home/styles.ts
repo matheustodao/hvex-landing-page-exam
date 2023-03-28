@@ -272,3 +272,68 @@ export const AdvantagesSection = styled.article`
     margin: 11.5rem 10rem;
   }
 `;
+
+export const AboutOmniDeviceSection = styled.article`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4.6rem 2.4rem;
+
+  height: 100%;
+
+  .left-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 54.4rem;
+    margin-bottom: 5.6rem;
+
+    h2 {
+      color: ${({ theme }) => theme.colors.brand[200]};
+      margin-top: 5.3rem;
+      margin-bottom: 3rem;
+    }
+
+    p {
+      line-height: 3.1rem;
+    }
+  }
+
+  .characteristics-list {
+    display: flex;
+    gap: 3.2rem;
+    overflow-x: scroll;
+    max-width: 100%;
+
+    > div {
+      min-width: 242.65px;
+      flex: 1 1 242.65px;
+    }
+  }
+
+  @media (min-width: 1135px) {
+    padding: 5.5rem 2.6rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+    gap: 5.6rem;
+
+    .left-content {
+      h2 {
+        font-size: ${({ })}
+      }
+    }
+
+    .characteristics-list {
+      overflow-x: hidden;
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      max-width: 100vw;
+    }
+  }
+
+  @media (min-width: 1370px) {
+    padding: 5.5rem 13.6rem;
+  }
+`;

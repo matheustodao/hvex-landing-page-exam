@@ -1,11 +1,13 @@
-import { OmniTrafoImageWrapper, HeroSection, CTASection, WelcomeSection, ListContainer, AdvantagesSection } from '@components/Home/styles';
+import Image from 'next/image';
+
+import { OmniTrafoImageWrapper, HeroSection, CTASection, WelcomeSection, ListContainer, AdvantagesSection, AboutOmniDeviceSection } from '@components/Home/styles';
 import { Section } from '@components/Home/Section';
 import { WhatsappFloat } from '@components/Home/WhatsappFloat';
 
 import Button from '@components/shared/Button';
 import { Text } from '@components/shared/Typography/Text';
-import Image from 'next/image';
 import { Divider } from '@components/Home/Divider';
+import { CharacteristicOmniCard } from '@components/Home/CharacteristicOmniCard';
 
 const welcome_list = ['Monitoramento inteligente de ativos', 'Melhoria dos indicadores de continuidade',
   'Comunicação Modular', 'Business Inteligence', 'Redução de Perdas técnicas e Não técnicas'];
@@ -99,6 +101,55 @@ export default function Home() {
             Falar com um consultor
           </Button>
         </CTASection>
+      </Section>
+
+      <Section>
+        <AboutOmniDeviceSection>
+          <div className="left-content">
+            <Text as="strong" size="large" weight={700}>
+              OMNI TRAFO
+            </Text>
+
+            <Text as="h2" size="large" weight={700}>
+              É o dispositivo capaz de integrar os transformadores as redes inteligentes
+            </Text>
+
+            <Text size="normal">
+              O Omni Trafo envia informações em tempo real, permitindo a administração remota de dados importantes da rede elétrica, como tensão, corrente, potência passante, energia, temperatura, sobrecarga entre outros, mapeando seu funcionamento, prevendo a vida útil dos ativos e aferindo perdas técnicas e não técnicas.
+            </Text>
+          </div>
+
+          <div className="characteristics-list">
+            <CharacteristicOmniCard
+              label="Sistema de Proteção"
+              icon={{
+                src: 'renewable-energy',
+              }}
+            />
+
+            <CharacteristicOmniCard
+              label="Integração de dados"
+              icon={{
+                src: 'data-integration',
+              }}
+            />
+
+            <CharacteristicOmniCard
+              label="Gestão de Ativos Elétricos"
+              icon={{
+                src: 'manage-electronics',
+              }}
+            />
+
+
+            <CharacteristicOmniCard
+              label="Comunicação inteligente"
+              icon={{
+                src: 'smart-communication',
+              }}
+            />
+          </div>
+        </AboutOmniDeviceSection>
       </Section>
 
       <Section variant="white">
