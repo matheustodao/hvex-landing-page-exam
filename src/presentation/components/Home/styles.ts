@@ -3,11 +3,11 @@
 import styled from 'styled-components';
 import { Divider } from './Divider';
 
-interface OminiTrafoImageWrapperProps {
+interface OmniTrafoImageWrapperProps {
   invert?: boolean;
 }
 
-export const OminiTrafoImageWrapper = styled.div<OminiTrafoImageWrapperProps>`
+export const OmniTrafoImageWrapper = styled.div<OmniTrafoImageWrapperProps>`
   position: relative;
   width: 50.5rem;
   height: 73.5rem;
@@ -33,7 +33,7 @@ export const HeroSection = styled.article`
   height: max-content;
   padding-bottom: 4.2rem;
 
-  ${OminiTrafoImageWrapper} {
+  ${OmniTrafoImageWrapper} {
     position: relative;
     margin-top: 8rem;
   }
@@ -78,7 +78,7 @@ export const HeroSection = styled.article`
       }
     }
 
-    ${OminiTrafoImageWrapper} {
+    ${OmniTrafoImageWrapper} {
       margin-top: 0;
       margin-left: -34rem;
       grid-area: right-content;

@@ -1,4 +1,4 @@
-import { OminiTrafoImageWrapper, HeroSection, CTASection, WelcomeSection, ListContainer } from '@components/Home/styles';
+import { OmniTrafoImageWrapper, HeroSection, CTASection, WelcomeSection, ListContainer, AdvantagesSection } from '@components/Home/styles';
 import { Section } from '@components/Home/Section';
 import { WhatsappFloat } from '@components/Home/WhatsappFloat';
 
@@ -9,6 +9,8 @@ import { Divider } from '@components/Home/Divider';
 
 const welcome_list = ['Monitoramento inteligente de ativos', 'Melhoria dos indicadores de continuidade',
   'Comunicação Modular', 'Business Inteligence', 'Redução de Perdas técnicas e Não técnicas'];
+
+const advantages = ['Balanço energético', 'Auto-diagnóstico dos transformadores', 'Medidor ideal para consumidores comerciais, industriais', 'À prova de fraude', 'Melhoria dos Indicadores de Continuidade', 'Maior vida útil do ativo', 'Acompanhamento em tempo real das condições do equipamento'];
 
 export default function Home() {
   return (
@@ -28,13 +30,13 @@ export default function Home() {
           </div>
 
 
-          <OminiTrafoImageWrapper>
+          <OmniTrafoImageWrapper>
             <Image
-              src="/assets/images/home/omini-trafo.png"
+              src="/assets/images/home/omni-trafo.png"
               alt="Omni Trafo"
               fill
             />
-          </OminiTrafoImageWrapper>
+          </OmniTrafoImageWrapper>
 
           <WhatsappFloat href="https://hvex.com.br/en" target="_blank">
             <Image
@@ -67,7 +69,7 @@ export default function Home() {
                     width={20}
                     height={20}
                   />
-                  <Text as="strong" weight={700} size="normal">
+                  <Text as="strong" weight={700} size="small">
                     {item}
                   </Text>
                 </li>
@@ -103,8 +105,40 @@ export default function Home() {
         <Text>Omini Trafo</Text>
       </Section>
 
-      <Section variant="cream">
-        <Text>dsad</Text>
+      <Section variant="cream" height="full">
+        <AdvantagesSection>
+          <div className="left-content">
+            <Text as="h2" size="large" weight={700}>
+              Desenvolvido para melhorar a performance dos ativos de distribuição
+            </Text>
+            <Divider />
+
+            <ListContainer>
+              {advantages.map((item, index) => (
+                <li key={`${item}#${index}`}>
+                  <Image
+                    src="/assets/images/icons/check-circle-fill--deep-blue.svg"
+                    alt="Icon check"
+                    width={20}
+                    height={20}
+                  />
+
+                  <Text as="strong" weight={700} size="small">
+                    {item}
+                  </Text>
+                </li>
+              ))}
+            </ListContainer>
+          </div>
+
+          <div className="wrapper-image">
+            <Image
+              src="/assets/images/home/omni-tranformer.png"
+              alt="Omni tranformer"
+              fill
+            />
+          </div>
+        </AdvantagesSection>
       </Section>
     </main>
   );
