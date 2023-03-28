@@ -45,10 +45,11 @@ export const HeroSection = styled.article`
 
     .description {
       margin-bottom: 3.2rem;
+      font-size: ${({ theme }) => theme.fonts.size.small};
     }
   }
 
-  @media (min-width: 1295px) {
+  @media (min-width: 1000px) {
     display: grid;
     grid-template-areas: "left-content right-content";
     width: 100%;
@@ -57,6 +58,7 @@ export const HeroSection = styled.article`
     padding-bottom: 5.6rem;
 
     .left-content {
+      grid-area: 'left-content';
       margin: auto 13.5rem;
       z-index: 2;
 
@@ -69,16 +71,16 @@ export const HeroSection = styled.article`
         line-height: 2.4rem;
         margin-top: 2.4rem;
         margin-bottom: 3.2rem;
-        max-width: 80rem;
-        font-size: ${({ theme }) => theme.fonts.size.small};
+        max-width: 76rem;
+        letter-spacing: -0.02rem;
+        font-size: ${({ theme }) => theme.fonts.size.normal};
       }
     }
 
     ${OminiTrafoImageWrapper} {
-      position: absolute;
-      right: 2rem;
-      top: 0;
       margin-top: 0;
+      margin-left: -34rem;
+      grid-area: right-content;
     }
   }
 `;
