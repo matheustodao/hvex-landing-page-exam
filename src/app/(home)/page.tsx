@@ -89,20 +89,6 @@ export default function Home() {
         </WelcomeSection>
       </Section>
 
-      <Section height="fit-content" variant="navy-blue">
-        <CTASection>
-          <Text as="h3" size="normal" weight={700}>
-            Quer saber mais sobre como podemos te ajudar a melhorar a performance de seus ativos?
-          </Text>
-
-          <Divider />
-
-          <Button variant="outline">
-            Falar com um consultor
-          </Button>
-        </CTASection>
-      </Section>
-
       <Section>
         <AboutOmniDeviceSection>
           <div className="left-content">
@@ -190,6 +176,21 @@ export default function Home() {
             />
           </div>
         </AdvantagesSection>
+      </Section>
+
+
+      <Section height="fit-content" variant="navy-blue">
+        <CTASection>
+          <Text as="h3" size="large" weight={700}>
+            Quer saber mais sobre como podemos te ajudar a melhorar a performance de seus ativos?
+          </Text>
+
+          <Divider />
+
+          <Button variant="outline">
+            Falar com um consultor
+          </Button>
+        </CTASection>
       </Section>
     </main>
   );
