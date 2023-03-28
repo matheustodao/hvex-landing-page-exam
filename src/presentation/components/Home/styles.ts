@@ -232,6 +232,16 @@ export const AdvantagesSection = styled.article`
     width: 35.1rem;
     height: 37.9rem;
 
+    @media (max-width: 305px) {
+      width: 100%;
+      height: 27.9rem;
+    }
+
+    @media (max-width: 375px) {
+      width: 25.1rem;
+      height: 27.9rem;
+    }
+
     @media (min-width: 680px) {
       width: 65.1rem;
       height: 67.9rem;
