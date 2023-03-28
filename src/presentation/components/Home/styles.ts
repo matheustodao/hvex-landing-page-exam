@@ -253,7 +253,7 @@ export const AdvantagesSection = styled.article`
       height: 67.9rem;
     }
 
-    @media (min-width: 1310px) {
+    @media (min-width: 1400px) {
       width: 85.1rem;
       height: 87.9rem;
     }
@@ -285,8 +285,9 @@ export const AdvantagesSection = styled.article`
     }
   }
 
-  @media (min-width: 1380px) {
+  @media (min-width: 1200px) {
     margin: 11.5rem 10rem;
+    margin-bottom: 0;
   }
 `;
 
