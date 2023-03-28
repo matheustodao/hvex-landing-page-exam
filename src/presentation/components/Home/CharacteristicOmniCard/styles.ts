@@ -19,7 +19,7 @@ export const Container = styled.div`
   text-align: center;
 
   strong {
-    color: #52E0FF;
+    color: ${({ theme }) => theme.colors.brand[200]};
   }
 
   img + strong {
