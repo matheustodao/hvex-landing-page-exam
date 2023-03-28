@@ -190,6 +190,8 @@ export const ListContainer = styled.ul`
   li {
     list-style: none;
     line-height: 2.4rem;
+    display: flex;
+    align-items: center;
 
     img {
       margin-right: 3rem;
