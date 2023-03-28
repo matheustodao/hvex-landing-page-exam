@@ -87,7 +87,7 @@ export default function Home() {
         </WelcomeSection>
       </Section>
 
-      <Section height="fit-content">
+      <Section height="fit-content" variant="navy-blue">
         <CTASection>
           <Text as="h3" size="normal" weight={700}>
             Quer saber mais sobre como podemos te ajudar a melhorar a performance de seus ativos?

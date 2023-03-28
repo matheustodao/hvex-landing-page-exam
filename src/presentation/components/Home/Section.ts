@@ -28,6 +28,13 @@ const VARIANT_SECTION = {
     `}
   `,
 
+  'navy-blue': css`
+    ${({ theme }) => css`
+      background: ${theme.colors.brand[500]};
+      color: ${ theme.colors.white};
+    `}
+  `,
+
   white: css`
     ${({ theme }) => css`
       background: ${theme.colors.white};
