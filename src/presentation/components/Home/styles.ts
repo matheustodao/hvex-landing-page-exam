@@ -60,7 +60,7 @@ export const HeroSection = styled.article`
 
     .left-content {
       grid-area: 'left-content';
-      margin: auto 13.5rem;
+      margin: auto 5.6rem;
       z-index: 2;
 
       .title {
@@ -82,6 +82,12 @@ export const HeroSection = styled.article`
       margin-top: 0;
       margin-left: -34rem;
       grid-area: right-content;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .left-content {
+      margin: auto 13.5rem;
     }
   }
 `;
@@ -120,7 +126,7 @@ export const WelcomeSection = styled.article`
       height: 35.41rem;
     }
 
-    @media (min-width: 1290px) {
+    @media (min-width: 1200px) {
       width: 55.3rem;
     }
   }
@@ -153,7 +159,7 @@ export const WelcomeSection = styled.article`
     }
   }
 
-  @media (min-width: 1290px) {
+  @media (min-width: 1200px) {
     margin: 12.5rem;
 
     .wrapper-image {
@@ -259,6 +265,7 @@ export const AdvantagesSection = styled.article`
     display: grid;
     height: 100vh;
     grid-template-areas: 'left-content right-content';
+    margin-bottom: 0;
 
     .left-content {
       grid-area: 'left-content';
@@ -330,9 +337,7 @@ export const AboutOmniDeviceSection = styled.article`
     gap: 5.6rem;
 
     .left-content {
-      h2 {
-        font-size: ${({ })}
-      }
+      margin-bottom: 0;
     }
 
     .characteristics-list {
