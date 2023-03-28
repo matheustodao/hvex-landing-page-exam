@@ -20,6 +20,7 @@ export const LIGHT_THEME = {
       500: '#1C2C44',
       400: '#036FC0',
       300: '#00B6DE',
+      200: '#52E0FF',
     },
   },
 };
