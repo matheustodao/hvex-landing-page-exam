@@ -1,6 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
+import { Divider } from './Divider';
 
 interface OminiTrafoImageWrapperProps {
   invert?: boolean;
@@ -192,6 +193,7 @@ export const ListContainer = styled.ul`
     line-height: 2.4rem;
     display: flex;
     align-items: center;
+    color: ${({ theme }) => theme.colors.gray[900]};
 
     img {
       margin-right: 3rem;
@@ -206,5 +208,67 @@ export const ListContainer = styled.ul`
         font-size: ${({ theme }) => theme.fonts.size.normal};
       }
     }
+  }
+`;
+
+export const AdvantagesSection = styled.article`
+  padding: 3.6rem 2.4rem;
+  position: relative;
+
+  .left-content {
+    h2 {
+      color: ${({ theme }) => theme.colors.brand[500]};
+    }
+
+    ${Divider} {
+      margin: 0;
+      margin-top: 2.7rem;
+      margin-bottom: 4.3rem;
+    }
+  }
+
+  .wrapper-image {
+    position: relative;
+    width: 35.1rem;
+    height: 37.9rem;
+
+    @media (min-width: 680px) {
+      width: 65.1rem;
+      height: 67.9rem;
+    }
+
+    @media (min-width: 1310px) {
+      width: 85.1rem;
+      height: 87.9rem;
+    }
+  }
+
+  @media (min-width: 1100px) {
+    margin: 11.5rem auto;
+    margin-right: 0;
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 'left-content right-content';
+
+    .left-content {
+      grid-area: 'left-content';
+      z-index: 3;
+      max-width: 57rem;
+
+      h2 {
+        font-size: ${({ theme }) => theme.fonts.size.large};
+      }
+    }
+
+    .wrapper-image {
+      grid-area: 'right-content';
+      position: absolute;
+      right: 0;
+      top: -9rem;
+    }
+  }
+
+  @media (min-width: 1380px) {
+    margin: 11.5rem 10rem;
   }
 `;
