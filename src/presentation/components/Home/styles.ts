@@ -105,9 +105,14 @@ export const WelcomeSection = styled.article`
 
   .wrapper-image {
     position: relative;
-    width: 35.65rem;
-    height: 45.41rem;
     margin-top: 4.6rem;
+    width: 100%;
+    height: 40rem;
+
+    @media (min-width: 403px) {
+      width: 35.65rem;
+      height: 45.41rem;
+    }
 
     @media (min-width: 790px) {
       width: 25.65rem;
