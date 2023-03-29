@@ -1,13 +1,17 @@
+# Define node version
+FROM node:18-alpine AS base
+
 # lAYER RESPONSIBLE TO INSTALL PROJECT'S DEPS
-FROM node:18-alpine AS deps
+FROM base AS deps
 WORKDIR /app
 COPY package.json yarn.lock ./
+RUN apk add --no-cache libc6-compat
 RUN yarn install --frozen-lockfile
 
 # LAYER RESPONIBLE TO RUN COMMAND YARN BUILD
 # COPY NODE_MODULES FOLDER CREATED ON DEPS LAYER
 # PAST INTO BUILDER LAYER AND THE END RUN yarn build
-FROM node:18-alpine AS builder
+FROM base AS builder
 WORKDIR /app
 COPY . .
 COPY --from=deps /app/node_modules ./node_modules
@@ -15,7 +19,7 @@ RUN yarn build
 
 # LAYER RESPONSIBLE TO RUN PROJECT
 # THEN COPY ALL FILES AND FOLDER REQUIRED TO START APP
-FROM node:18-alpine AS runner
+FROM base AS runner
 WORKDIR /app
 ENV NODE_ENV production
 
