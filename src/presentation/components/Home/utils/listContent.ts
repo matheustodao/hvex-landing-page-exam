@@ -1,3 +1,5 @@
+import { IconBadgeFilename } from '../Badge';
+
 export const welcome_list = ['Monitoramento inteligente de ativos', 'Melhoria dos indicadores de continuidade',
   'Comunicação Modular', 'Business Inteligence', 'Redução de Perdas técnicas e Não técnicas'];
 
@@ -22,5 +24,51 @@ export const faq: { label: string, description: string }[] = [
   {
     label: 'Ele pode ser instalado em transformadores que já estão em campo ?',
     description: 'Sim, o dispositivo pode ser instalado em equipamentos em operação, porem a aferição de temperatura do topo de óleo será apenas ambiente.'
+  }
+];
+
+interface Badge {
+  title: string,
+  src: IconBadgeFilename
+}
+export const badges: Badge[] = [
+  {
+    title: 'Monitoramento de  tensão, corrente e carga;',
+    src: 'dashboard',
+  },
+
+  {
+    title: 'Análise de perda de vida útil do transformador;',
+    src: 'growth',
+  },
+
+  {
+    title: 'Medição do balanço energético de Perdas',
+    src: 'up-and-down-arrow',
+  },
+
+  {
+    title: 'Detecção de faltas na rede elétrica',
+    src: 'no-charges',
+  },
+
+  {
+    title: 'Análise de Fator de potência',
+    src: 'bpm',
+  },
+
+  {
+    title: 'Harmônicas de corrente e tensão',
+    src: 'harmonics',
+  },
+
+  {
+    title: 'Medição de temperatura interna',
+    src: 'thermometer',
+  },
+
+  {
+    title: 'Supervisão de  baixa tensão',
+    src: 'battery',
   }
 ];
