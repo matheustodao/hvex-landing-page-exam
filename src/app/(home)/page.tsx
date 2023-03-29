@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { OmniTrafoImageWrapper, HeroSection, CTASection, WelcomeSection, ListContainer, AdvantagesSection, AboutOmniDeviceSection } from '@components/Home/styles';
+import { OmniTrafoImageWrapper, HeroSection, CTASection, WelcomeSection, ListContainer, AdvantagesSection, AboutOmniDeviceSection, FAQSection } from '@components/Home/styles';
 import { Section } from '@components/Home/Section';
 import { WhatsappFloat } from '@components/Home/WhatsappFloat';
 
@@ -8,7 +8,8 @@ import Button from '@components/shared/Button';
 import { Text } from '@components/shared/Typography/Text';
 import { Divider } from '@components/Home/Divider';
 import { CharacteristicOmniCard } from '@components/Home/CharacteristicOmniCard';
-import { welcome_list, advantages } from '@components/Home/utils/listContent';
+import { welcome_list, advantages, faq } from '@components/Home/utils/listContent';
+import { AccordionContainer, AccordionItem } from '@components/shared/Accordion';
 
 export default function Home() {
   return (
@@ -187,6 +188,25 @@ export default function Home() {
             Falar com um consultor
           </Button>
         </CTASection>
+      </Section>
+
+      <Section variant="white">
+        <FAQSection>
+          <Text as="h2" size="large" weight={700}>
+            Perguntas Frequentes
+          </Text>
+
+          <AccordionContainer type="multiple" className="faq-container">
+            {faq.map((question, index) => (
+              <AccordionItem
+                key={`${question.label}#${index}`}
+                value={`item-${index}`}
+                label={question.label}
+                description={question.description}
+              />
+            ))}
+          </AccordionContainer>
+        </FAQSection>
       </Section>
     </main>
   );
