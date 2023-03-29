@@ -48,17 +48,23 @@ export const MainInformation = styled.div`
         margin-top: 1.6rem;
       }
     }
+
+    &:last-child {
+      max-width: 100%;
+    }
   }
 
   .social {
     display: flex;
     align-items: center;
     gap: 2.4rem;
+    flex:
   }
 
   @media (min-width: 920px) {
     flex-direction: row;
     justify-content: space-between;
+    gap: 0;
 
     .--content-info {
       max-width: 23rem;
