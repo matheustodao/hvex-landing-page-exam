@@ -182,8 +182,7 @@ export const CTASection = styled.article`
   align-items: center;
   justify-content: center;
   margin: auto 2.4rem;
-  padding-top: 2.8rem;
-  padding-bottom: 6rem;
+  padding: 7.1rem;
 
   h3 {
     max-width: 56.9rem;
@@ -360,6 +359,10 @@ export const FAQSection = styled.article`
   align-items: center;
   justify-content: center;
   margin: 7.4rem auto;
+
+  h2 {
+    text-align: center;
+  }
 
   .faq-container {
     max-width: 77rem;
