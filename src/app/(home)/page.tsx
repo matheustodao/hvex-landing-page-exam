@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { OmniTrafoImageWrapper, HeroSection, CTASection, WelcomeSection, ListContainer, AdvantagesSection, AboutOmniDeviceSection, FAQSection, PreentationSection } from '@components/Home/styles';
+import { OmniTrafoImageWrapper, HeroSection, CTASection, WelcomeSection, ListContainer, AdvantagesSection, AboutOmniDeviceSection, FAQSection, PresentationSection } from '@components/Home/styles';
 import { Section } from '@components/Home/Section';
 import { WhatsappFloat } from '@components/Home/WhatsappFloat';
 
@@ -8,8 +8,9 @@ import Button from '@components/shared/Button';
 import { Text } from '@components/shared/Typography/Text';
 import { Divider } from '@components/Home/Divider';
 import { CharacteristicOmniCard } from '@components/Home/CharacteristicOmniCard';
-import { welcome_list, advantages, faq } from '@components/Home/utils/listContent';
+import { welcome_list, advantages, faq, badges } from '@components/Home/utils/listContent';
 import { AccordionContainer, AccordionItem } from '@components/shared/Accordion';
+import { Budge } from '@components/Home/Badge';
 
 export default function Home() {
   return (
@@ -137,7 +138,7 @@ export default function Home() {
       </Section>
 
       <Section variant="white">
-        <PreentationSection>
+        <PresentationSection>
           <div className="right-content">
             <Text as="strong" size="large" weight={700}>Omini Trafo</Text>
             <Divider />
@@ -148,6 +149,12 @@ export default function Home() {
             <Text size="normal">
               O Omni trafo é uma solução consolidada para monitoramento de ativos.   Através deste equipamento, informações importantes da rede são enviadas em tempo real , permitindo, assim, a administração remota de dados como:
             </Text>
+
+            <div className="list-badge">
+              {badges.map((item, index) => (
+                <Budge key={`${item.title}-${item.src}#${index}`} title={item.title} srcIcon={item.src} />
+              ))}
+            </div>
           </div>
 
           <OmniTrafoImageWrapper invert>
@@ -158,7 +165,7 @@ export default function Home() {
               quality={45}
             />
           </OmniTrafoImageWrapper>
-        </PreentationSection>
+        </PresentationSection>
       </Section>
 
       <Section variant="cream" height="full">

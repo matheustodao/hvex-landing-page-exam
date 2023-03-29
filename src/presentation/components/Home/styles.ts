@@ -353,10 +353,17 @@ export const AboutOmniDeviceSection = styled.article`
   }
 `;
 
-export const PreentationSection = styled.article`
+export const PresentationSection = styled.article`
   padding: 4.6rem 2.4rem;
   display: flex;
   flex-direction: column;
+
+  .list-badge {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.8rem;
+    margin-top: 11.4rem;
+  }
 
   .right-content {
     ${Divider} {
@@ -368,10 +375,17 @@ export const PreentationSection = styled.article`
     }
   }
 
+  ${OmniTrafoImageWrapper} {
+    display: none;
+  }
+
   @media (min-width: 1200px) {
     display: grid;
     grid-template-columns: repeat(2, auto);
 
+    ${OmniTrafoImageWrapper} {
+      display: block;
+    }
     .right-content {
       grid-column-start: 2;
 
