@@ -353,3 +353,25 @@ export const AboutOmniDeviceSection = styled.article`
     padding: 5.5rem 13.6rem;
   }
 `;
+
+export const FAQSection = styled.article`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 7.4rem auto;
+
+  .faq-container {
+    max-width: 77rem;
+    width: 100%;
+    margin-top: 6rem;
+
+    .trigger-container {
+      strong {
+        min-height: 3.8rem;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+`;
