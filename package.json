@@ -6,7 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "docker:build": "docker build -t hvex-next-image .",
+    "docker:run": "docker run --name hvex-next-container -p 3000:3000 hvex-next-image",
+    "docker:start": "docker start hvex-next-container",
+    "docker:start-build": "yarn docker:build && yarn docker:run && yarn docker:start",
+    "docker:stop": "docker stop hvex-next-container",
+    "docker:clean": "yarn docker:stop || docker rm -f hvex-next-container && docker rmi hvex-next-image"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.1.1",
