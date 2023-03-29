@@ -20,6 +20,30 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
 
     box-sizing: border-box;
+
+    ::-webkit-scrollbar {
+      width: 0.4rem;
+    }
+
+    ::-webkit-scrollbar:horizontal {
+      height: 2px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    ::-moz-scrollbar-track {
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+      width: 2px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
   }
 
   :root {
