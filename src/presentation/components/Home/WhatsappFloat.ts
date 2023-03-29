@@ -13,8 +13,8 @@ export const WhatsappFloat = styled.a`
   background: ${({ theme }) => theme.colors.brand[300]};
 
   position: fixed;
-  bottom: 4rem;
-  right: 12.5rem;
+  bottom: 7rem;
+  right: 2.5rem;
 
   z-index: 30;
 
