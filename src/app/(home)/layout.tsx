@@ -1,4 +1,5 @@
 import { LayoutSetup } from '@/presentation/components/shared/config/layout/LayoutSetup';
+import { Footer } from '@components/Home/Footer';
 import { LPHeader } from '@components/shared/header/LPHeader';
 
 export const metadata = {
@@ -19,6 +20,8 @@ export default function RootLayout({
           <LPHeader />
 
           {children}
+
+          <Footer />
         </LayoutSetup>
       </body>
     </html>
