@@ -34,6 +34,7 @@ export default function Home() {
               src="/assets/images/home/omni-trafo.png"
               alt="Omni Trafo"
               fill
+              quality={45}
             />
           </OmniTrafoImageWrapper>
 
