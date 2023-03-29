@@ -72,4 +72,15 @@ export const Route = styled.li<RouteProps>`
   & + & {
     margin-left: 4.8rem;
   }
+
+
+  @media (max-width: 490px) {
+    a, small {
+      font-size: 1.4rem;
+    }
+
+    & + & {
+      margin-left: 2.8rem;
+    }
+  }
 `;
