@@ -408,6 +408,13 @@ export const PresentationSection = styled.article`
   @media (min-width: 1290px) {
     padding: 6.2rem 4.5rem;
   }
+
+  @media (min-width: 1312px) {
+    .list-badge {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+    }
+  }
 `;
 
 export const FAQSection = styled.article`
