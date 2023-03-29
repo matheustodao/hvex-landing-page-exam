@@ -353,6 +353,49 @@ export const AboutOmniDeviceSection = styled.article`
   }
 `;
 
+export const PreentationSection = styled.article`
+  padding: 4.6rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+
+  .right-content {
+    ${Divider} {
+      margin: 2.4rem 0;
+    }
+
+    p {
+      margin-top: 2.4rem;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+
+    .right-content {
+      grid-column-start: 2;
+
+      h2 {
+        max-width: 50.5rem;
+      }
+
+      p {
+        max-width: 67.2rem;
+      }
+    }
+
+    ${OmniTrafoImageWrapper} {
+      grid-column-start: 1;
+      grid-row-start: 1;
+      margin-right: 4.6rem;
+    }
+  }
+
+  @media (min-width: 1290px) {
+    padding: 6.2rem 4.5rem;
+  }
+`;
+
 export const FAQSection = styled.article`
   display: flex;
   flex-direction: column;

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { OmniTrafoImageWrapper, HeroSection, CTASection, WelcomeSection, ListContainer, AdvantagesSection, AboutOmniDeviceSection, FAQSection } from '@components/Home/styles';
+import { OmniTrafoImageWrapper, HeroSection, CTASection, WelcomeSection, ListContainer, AdvantagesSection, AboutOmniDeviceSection, FAQSection, PreentationSection } from '@components/Home/styles';
 import { Section } from '@components/Home/Section';
 import { WhatsappFloat } from '@components/Home/WhatsappFloat';
 
@@ -137,7 +137,28 @@ export default function Home() {
       </Section>
 
       <Section variant="white">
-        <Text>Omini Trafo</Text>
+        <PreentationSection>
+          <div className="right-content">
+            <Text as="strong" size="large" weight={700}>Omini Trafo</Text>
+            <Divider />
+            <Text as="h2" size="large" weight={700}>
+              Monitoramento inteligente de transformadores de distribuição
+            </Text>
+
+            <Text size="normal">
+              O Omni trafo é uma solução consolidada para monitoramento de ativos.   Através deste equipamento, informações importantes da rede são enviadas em tempo real , permitindo, assim, a administração remota de dados como:
+            </Text>
+          </div>
+
+          <OmniTrafoImageWrapper invert>
+            <Image
+              src="/assets/images/home/omni-trafo.png"
+              alt="Omni Trafo"
+              fill
+              quality={45}
+            />
+          </OmniTrafoImageWrapper>
+        </PreentationSection>
       </Section>
 
       <Section variant="cream" height="full">
