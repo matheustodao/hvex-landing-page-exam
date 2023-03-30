@@ -22,7 +22,6 @@ export const Nav = styled.nav`
   justify-content: space-between;
   width: 100%;
 
-
   @media (max-width: 805px) {
     flex-direction: column;
     gap: 2.4rem;
@@ -39,6 +38,12 @@ export const Content = styled.div`
 
   > button {
     height: fit-content;
+  }
+
+  @media (max-width: 500px) {
+    ul {
+      flex-direction: column;
+    }
   }
 
   @media (max-width: 680px) {
@@ -73,14 +78,21 @@ export const Route = styled.li<RouteProps>`
     margin-left: 4.8rem;
   }
 
+  @media (max-width: 407px) {
+    a, small {
+      text-align: center;
+    }
+  }
 
-  @media (max-width: 490px) {
+  @media (max-width: 500px) {
     a, small {
       font-size: 1.4rem;
+      text-align: left;
     }
 
     & + & {
-      margin-left: 2.8rem;
+      margin-top: 1.6rem;
+      margin-left: 0;
     }
   }
 `;
