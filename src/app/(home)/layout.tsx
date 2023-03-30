@@ -1,5 +1,5 @@
 import { LayoutSetup } from '@/presentation/components/shared/config/layout/LayoutSetup';
-import { Footer } from '@components/Home/Footer';
+import { Footer } from '@components/shared/Footer';
 import { LPHeader } from '@components/shared/header/LPHeader';
 
 export const metadata = {
