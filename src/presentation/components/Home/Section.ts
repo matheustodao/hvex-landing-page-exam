@@ -11,7 +11,7 @@ const VARIANT_HEIGHT_SECTION = {
     min-height: fit-content;
   `,
 
-  default: css`
+  '80vh': css`
     min-height: 80vh;
   `,
 
@@ -57,17 +57,21 @@ interface SectionProps {
 }
 
 export const Section = styled.section<SectionProps>`
-  position: sticky;
-  top: 0;
   padding: 3.2rem auto;
   width: 100%;
-  ${({ height }) => VARIANT_HEIGHT_SECTION[height ?? 'default']};
-
-  article {
-    padding-top: 32px;
-  }
+  ${({ height }) => VARIANT_HEIGHT_SECTION[height ?? 'auto']};
 
   border-top: ${({ hasBorderTop }) => (hasBorderTop ? '1px solid #000' : 'none')};
+
+  > article {
+    padding-top: 4.6rem;
+    padding-bottom: 4.6rem;
+  }
+
+  @media (min-width: 1200px) {
+    position: sticky;
+    top: 0;
+  }
 
   ${({ variant }) => VARIANT_SECTION[variant ?? 'default']}
 `;
