@@ -38,7 +38,6 @@ export default function Home() {
             <Button>Quero mais informações</Button>
           </div>
 
-
           <OmniTrafoImageWrapper>
             <Image
               src="/assets/images/home/omni-trafo.png"
@@ -126,7 +125,6 @@ export default function Home() {
               }}
             />
 
-
             <CharacteristicOmniCard
               label="Comunicação inteligente"
               icon={{
@@ -203,7 +201,6 @@ export default function Home() {
           </div>
         </AdvantagesSection>
       </Section>
-
 
       <Section height="fit-content" variant="navy-blue">
         <CTASection>
