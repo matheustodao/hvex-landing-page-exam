@@ -57,8 +57,15 @@ interface SectionProps {
 }
 
 export const Section = styled.section<SectionProps>`
+  position: sticky;
+  top: 0;
+  padding: 3.2rem auto;
   width: 100%;
   ${({ height }) => VARIANT_HEIGHT_SECTION[height ?? 'default']};
+
+  article {
+    padding-top: 32px;
+  }
 
   border-top: ${({ hasBorderTop }) => (hasBorderTop ? '1px solid #000' : 'none')};
 
