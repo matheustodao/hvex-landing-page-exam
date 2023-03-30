@@ -1,0 +1,22 @@
+name: run-tests-ci
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+        with:
+          node-version: 18
+
+      - name: Install yarn
+        run: sudo apt install yarn
+
+      - name: Install dependencies
+        run: yarn install && yarn add cross-env
+
+      - name: Run jest tests
+        run: yarn cross-env CI=true yarn test -watchAll=false --bail
