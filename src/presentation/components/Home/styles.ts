@@ -136,8 +136,6 @@ export const WelcomeSection = styled.article`
     align-items: flex-start;
 
     .info-container {
-      grid-area: information;
-      grid-column-start: 2;
       margin-left: 5.6rem;
       flex: 2;
 
@@ -152,7 +150,6 @@ export const WelcomeSection = styled.article`
     }
 
     .wrapper-image {
-      grid-area: wrapperImage;
       margin-top: 0;
       flex: 1 10.65rem 10.65rem;
       height: 45.41rem;
@@ -163,7 +160,6 @@ export const WelcomeSection = styled.article`
     padding: 12.5rem;
 
     .wrapper-image {
-      grid-area: wrapperImage;
       margin-top: 0;
       height: 70.821rem;
     }
@@ -265,7 +261,6 @@ export const AdvantagesSection = styled.article`
     margin: 11.5rem auto;
     margin-right: 0;
     display: grid;
-    height: 100vh;
     grid-template-areas: 'left-content right-content';
     margin-bottom: 0;
 
@@ -298,8 +293,6 @@ export const AboutOmniDeviceSection = styled.article`
   flex-direction: column;
   align-items: center;
   padding: 4.6rem 2.4rem;
-
-  height: 100%;
 
   .left-content {
     display: flex;
@@ -335,7 +328,6 @@ export const AboutOmniDeviceSection = styled.article`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 80vh;
 
     gap: 5.6rem;
 
@@ -383,14 +375,14 @@ export const PresentationSection = styled.article`
   }
 
   @media (min-width: 1200px) {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
+    flex-direction: row-reverse;
 
     ${OmniTrafoImageWrapper} {
       display: block;
     }
     .right-content {
       grid-column-start: 2;
+      flex: 2;
 
       h2 {
         max-width: 50.5rem;
