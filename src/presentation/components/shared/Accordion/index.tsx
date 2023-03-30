@@ -30,10 +30,10 @@ export const AccordionContainer = forwardRef<HTMLDivElement, AccordionContainerP
 
 export const AccordionItem = forwardRef<HTMLDivElement, AccordionItemProps>(({ label, description, ...props }, ItemRef) => {
   return (
-    <Item ref={ItemRef} {...props}>
+    <Item ref={ItemRef} {...props} role="accordion-item">
       <Header>
         <RadixAccordion.Trigger className="trigger-container">
-          <Text as="strong" weight={700}>
+          <Text as="strong" weight={700} role="accordion-title">
             {label}
           </Text>
 
@@ -49,7 +49,7 @@ export const AccordionItem = forwardRef<HTMLDivElement, AccordionItemProps>(({ l
 
       <Content>
         <Separator />
-        <Text>
+        <Text role="accordion-description">
           {description}
         </Text>
       </Content>
