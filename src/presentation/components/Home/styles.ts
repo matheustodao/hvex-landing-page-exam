@@ -412,7 +412,7 @@ export const PresentationSection = styled.article`
   @media (min-width: 1312px) {
     .list-badge {
       display: grid;
-      grid-template-columns: repeat(3, auto);
+      grid-template-columns: repeat(4, auto);
     }
   }
 `;
