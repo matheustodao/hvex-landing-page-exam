@@ -4,15 +4,17 @@
 
 </center>
 
-# Techs
+# 🧪 Techs
 
-- [Next.JS 13 (using experimental app directory)](https://nextjs.org/)
+- [Next.JS 13 (using experimental app directory and Server Components)](https://nextjs.org/)
 - [Styled-Components](https://styled-components.com/)
 - [ReactJS](https://react.dev/)
 - [Typescript](https://www.typescriptlang.org/)
 - [Vercel](https://vercel.com/)
 - [Github Actions](https://docs.github.com/en/actions) for CI/CD
 - [Docker](https://www.docker.com/)
+- [Jest](https://jestjs.io)
+- [Testing Library](https://testing-library.com/)
 - [Sharp](https://nextjs.org/docs/messages/install-sharp) [(optimize images in production)](https://nextjs.org/docs/basic-features/image-optimization)
 
 <br />
