@@ -422,7 +422,7 @@ export const FAQSection = styled.article`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 7.4rem auto;
+  padding: 7.4rem auto;
 
   h2 {
     text-align: center;
