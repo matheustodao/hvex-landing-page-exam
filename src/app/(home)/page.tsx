@@ -24,8 +24,6 @@ export default function Home() {
         />
       </WhatsappFloat>
 
-      <h1>Só pra teste</h1>
-
       <Section hasBorderTop>
         <HeroSection>
           <div className="left-content">
