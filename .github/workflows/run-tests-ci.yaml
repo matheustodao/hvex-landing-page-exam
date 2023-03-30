@@ -2,6 +2,8 @@ name: run-tests-ci
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
   build:
@@ -20,3 +22,6 @@ jobs:
 
       - name: Run jest tests
         run: yarn cross-env CI=true yarn test -watchAll=false --bail
+
+      - name: Type Check
+        run: yarn tsc
