@@ -95,7 +95,7 @@ export const HeroSection = styled.article`
 export const WelcomeSection = styled.article`
   display: flex;
   flex-direction: column;
-  margin: 2.4rem;
+  padding: 2.4rem;
   align-items: center;
   justify-content: center;
 
@@ -160,7 +160,7 @@ export const WelcomeSection = styled.article`
   }
 
   @media (min-width: 1200px) {
-    margin: 12.5rem;
+    padding: 12.5rem;
 
     .wrapper-image {
       grid-area: wrapperImage;
