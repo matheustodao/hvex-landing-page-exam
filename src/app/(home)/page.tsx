@@ -24,7 +24,7 @@ export default function Home() {
         />
       </WhatsappFloat>
 
-      <Section hasBorderTop height="auto">
+      <Section hasBorderTop>
         <HeroSection>
           <div className="left-content">
             <Text as="h1" size="medium" weight={700} className="title">
@@ -50,7 +50,7 @@ export default function Home() {
         </HeroSection>
       </Section>
 
-      <Section variant="white" height="auto">
+      <Section variant="white">
         <WelcomeSection>
           <div className="info-container">
             <Text as="h2" size="medium" weight={700} className="title">
