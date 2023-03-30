@@ -15,6 +15,15 @@ import { Budge } from '@components/Home/Badge';
 export default function Home() {
   return (
     <main>
+      <WhatsappFloat href="https://hvex.com.br/en" target="_blank">
+        <Image
+          src="/assets/images/icons/whatsapp-white.svg"
+          alt="Whatsapp"
+          width={39.7}
+          height={40.02}
+        />
+      </WhatsappFloat>
+
       <Section hasBorderTop height="auto">
         <HeroSection>
           <div className="left-content">
@@ -38,15 +47,6 @@ export default function Home() {
               quality={45}
             />
           </OmniTrafoImageWrapper>
-
-          <WhatsappFloat href="https://hvex.com.br/en" target="_blank">
-            <Image
-              src="/assets/images/icons/whatsapp-white.svg"
-              alt="Whatsapp"
-              width={39.7}
-              height={40.02}
-            />
-          </WhatsappFloat>
         </HeroSection>
       </Section>
 
