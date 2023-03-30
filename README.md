@@ -1,38 +1,125 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<center>
 
-## Getting Started
+![logo-white.svg](public/assets/images/logo-white.svg)
 
-First, run the development server:
+</center>
+
+# Techs
+
+- [Next.JS 13 (using experimental app directory)](https://nextjs.org/)
+- [Styled-Components](https://styled-components.com/)
+- [ReactJS](https://react.dev/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Docker](https://www.docker.com/)
+- [Sharp](https://nextjs.org/docs/messages/install-sharp) [(optimize images in production)](https://nextjs.org/docs/basic-features/image-optimization)
+
+<br />
+<br />
+
+# 🎯 Goal
+
+The test consists of verifying your knowledge in frontend and your analytical thinking when developing. We know that each developer has their own particularities, tools, plugins, and technologies that they like.
+
+<br />
+<br />
+
+# 👀 What you will find in the project
+
+The purpose-built project has all the requirements and optional features described in the challenge. It was also developed to apply all my knowledge and learn something new during the development process. Therefore, you will find **clean code, clean architecture, the application running in a Docker container, conventional commits, a mobile-first approach, a responsive app, and high Lighthouse scores.**
+
+<br />
+<br />
+
+# 🚀 How to run app
+
+To use the application, there are two options: run the project locally or view it in production.
+<br/>
+<br/>
+
+``If you intend to use Lighthouse to view website scores, it is recommended to use a private browsing tab.``
+
+<br/>
+
+## Production
+>[https://hvex-landing-page-exam.vercel.app](https://hvex-landing-page-exam.vercel.app)
+
+<br />
+<br />
+
+## 🐋 Locally with Docker
+
+1. Clone repo
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+git clone https://github.com/matheustodao/hvex-landing-page-exam.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. If it's your first time running the application
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+yarn docker:start-build
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+# OR
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+npm run docker:start-build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. If it's not your first time, and you already have a Docker container built, then
 
-## Learn More
+```bash
+yarn docker:start
 
-To learn more about Next.js, take a look at the following resources:
+# OR
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+npm run docker:start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4. Then, you can view the application running on
 
-## Deploy on Vercel
+> [http://localhost:3000](http://localhost:3000)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<br />
+<br />
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 🍀 Locally without Docker
+
+---
+
+1. Clone repo
+
+```bash
+git clone https://github.com/matheustodao/hvex-landing-page-exam.git
+```
+
+2. Build the application
+
+```bash
+yarn build
+
+# OR
+
+npm run build
+```
+
+3. Then, start the application
+
+```bash
+yarn start
+
+# OR
+
+npm start
+```
+
+4. Then, you can view the application running on
+
+> [http://localhost:3000](http://localhost:3000)
+
+<br />
+<br />
+
+<center>
+
+Developed by [Matheus Todao](https://linkedin.com/in/matheustodao)  💙  reach me on *itodaomatheus@gmail.com*
+
+</center>
