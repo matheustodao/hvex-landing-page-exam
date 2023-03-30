@@ -10,11 +10,12 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  width: fit-content;
   padding: 3.6rem 2.1rem;
   padding-bottom: 2.6rem;
 
   max-width: 24.265rem;
+  max-height: 24.8rem;
+  height: 100%;
 
   text-align: center;
 

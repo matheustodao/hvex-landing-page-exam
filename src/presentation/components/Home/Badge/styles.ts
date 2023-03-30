@@ -15,8 +15,10 @@ export const Container = styled.div`
     justify-content: center;
     padding: 2rem;
     aspect-ratio: 1;
-    width: 7.9rem;
-    height: 7.9rem;
+    max-width: 7.9rem;
+    max-height: 7.9rem;
+    height: 100%;
+    width: 100%;
     border-radius: 100%;
     background: ${({ theme }) => theme.colors.brand[600]};
   }
