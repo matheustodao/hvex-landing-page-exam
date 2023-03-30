@@ -181,12 +181,15 @@ export const CTASection = styled.article`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: auto 2.4rem;
-  padding: 7.1rem;
+  padding: 2.4rem;
 
   h3 {
     max-width: 56.9rem;
     text-align: center;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 7.1rem;
   }
 `;
 
