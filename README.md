@@ -16,6 +16,7 @@
 - [Jest](https://jestjs.io)
 - [Testing Library](https://testing-library.com/)
 - [Sharp](https://nextjs.org/docs/messages/install-sharp) [(optimize images in production)](https://nextjs.org/docs/basic-features/image-optimization)
+- [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
 <br />
 <br />
@@ -29,7 +30,7 @@ The test consists of verifying your knowledge in frontend and your analytical th
 
 # 👀 What you will find in the project
 
-The purpose-built project has all the requirements and optional features described in the challenge. It was also developed to apply all my knowledge and learn something new during the development process. Therefore, you will find **clean code, clean architecture, the application running in a Docker container, conventional commits, a mobile-first approach, a responsive app, and high Lighthouse scores, Vercel, Continuous integration and Continuous deployment, Github Actions.**
+The purpose-built project has all the requirements and optional features described in the challenge. It was also developed to apply all my knowledge and learn something new during the development process. Therefore, you will find **clean code, clean architecture, the application running in a Docker container, conventional commits, a mobile-first approach, a responsive app, and high Lighthouse scores, Vercel, Continuous integration and Continuous deployment, Github Actions, Unit test.**
 
 <br />
 <br />
