@@ -12,5 +12,5 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag hvex-nextjs-image:$(date +%s)
+      - name: Build the Docker from Compose file
+        run: docker-compose up -d
