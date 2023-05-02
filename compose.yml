@@ -4,4 +4,6 @@ services:
     ports:
       - 3000:3000
     build:
+      tags:
+        - hvex-nextjs-image:$(date +%s)
       dockerfile: ./Dockerfile
