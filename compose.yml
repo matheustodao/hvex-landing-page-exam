@@ -1,0 +1,7 @@
+services:
+  next-frontend:
+    image: hvex/landing-page-exam
+    ports:
+      - 3000:3000
+    build:
+      dockerfile: ./Dockerfile
